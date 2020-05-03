@@ -51,6 +51,17 @@ var employees = [
 */
 
 //Code Here
+const employeeUpdater = () => {
+  let reducedArr = employees
+  for (let key in reducedArr){
+    if (reducedArr[key].firstName == 'Theo'){
+      delete reducedArr[key]
+    }else if(reducedArr[key].firstName == 'Lorie') {
+      reducedArr[key].department = 'HR'
+      
+    }
+  }return reducedArr
+}
 
 
 
