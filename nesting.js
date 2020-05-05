@@ -63,6 +63,12 @@ const employeeUpdater = () => {
   }return reducedArr
 }
 
+// var employeeUpdater = employees
+//  .filter(employee => employee.firstName !== 'Theo')
+//  .map((employee) => {
+//    if (employee.firstName === 'Lorie') employee.departement = 'HR';
+//    return employee;
+//  })
 
 
 ////////// PROBLEM 2 //////////
@@ -79,11 +85,14 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+// Code Here
 
+function removeDuplicates(){
+ result = [... new Set(workplaceAccidents)]
+  return result
+}
 
-
-////////// PROBLEM 3 //////////
+ ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
 var cat = {
@@ -108,8 +117,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity= cat.catFriends[0].activities[1];
+var fluffy2ndFriend= cat.catFriends[1].name ;
 
 
 
